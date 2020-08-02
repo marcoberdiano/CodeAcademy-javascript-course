@@ -27,12 +27,16 @@ const getUserChoice = userInput => {
   // test computer choice
   // console.log("Computer Choice:",getComputerChoice());
   
-  function determineWinner(userChoice, computerChoice){
+    function determineWinner(userChoice, computerChoice){
   
     if(userChoice===computerChoice){
       return 'Tie';
     } else {
-  
+
+    if (userChoice==='Invalid choice!') {
+        return 'Error: Missing user input.';
+    }
+
       if (userChoice==='bomb') {
           return 'User Won!';
       }
