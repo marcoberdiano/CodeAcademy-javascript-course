@@ -68,7 +68,7 @@ const getUserChoice = userInput => {
   }
   
   function playGame(){
-    userChoice = getUserChoice('bomb');
+    userChoice = getUserChoice('paper');
     computerChoice = getComputerChoice();
     console.log(`User Choice: ${userChoice}`)
     console.log(`Computer Choice: ${computerChoice}`)
