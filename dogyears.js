@@ -1,5 +1,5 @@
 // create myage variable
-const myAge = 32
+const myAge = 25
 
 //  create earlyYears variable
 let earlyYears = 2
