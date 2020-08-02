@@ -1,8 +1,6 @@
 const getUserChoice = userInput => {
     userInput = userInput.toLowerCase();
-    if (userInput==='rock' || userInput==='paper' || userInput==='scissors') {
-      return userInput;
-    } else if (userInput==='bomb'){
+    if (userInput==='rock' || userInput==='paper' || userInput==='scissors' || userInput==='bomb') {
       return userInput;
     } else {
       return 'Invalid choice!';
