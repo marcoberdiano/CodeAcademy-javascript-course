@@ -5,7 +5,7 @@ const myAge = 32
 let earlyYears = 2
 earlyYears *= 10.5
 
-// laterYears formulae
+// subtract 2 from lateryears formulae
 let laterYears = myAge - 2
 
 // dog years 4 years later
