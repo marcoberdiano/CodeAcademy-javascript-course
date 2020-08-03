@@ -8,7 +8,7 @@ const vowels = ['a','e','i','o','u'];
 resultArray = [];
 
 // iterate the input variable
-function whaletakal (input){
+function whaletalk(input){
     for(let i = 0; i < input.length; i++) {
     for(let j = 0; j < vowels.length; j++) {
         if (input[i]==vowels[j]){
@@ -25,4 +25,4 @@ function whaletakal (input){
     console.log(resultArray.join(''));
 }
 
-whaletakal(input4);
+whaletalk(input4);
