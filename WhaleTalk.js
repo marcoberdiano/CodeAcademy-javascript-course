@@ -10,17 +10,17 @@ resultArray = [];
 // iterate the input variable
 function whaletalk(input){
     for(let i = 0; i < input.length; i++) {
-    for(let j = 0; j < vowels.length; j++) {
-        if (input[i]==vowels[j]){
-        resultArray.push(input[i].toUpperCase());
+        for(let j = 0; j < vowels.length; j++) {
+            if (input[i]==vowels[j]){
+                resultArray.push(input[i].toUpperCase());
+            }
         }
-    }
-    if(input[i]=='e'){
-        resultArray.push(input[i].toUpperCase());
-    }
-    if(input[i]=='u'){
-        resultArray.push(input[i].toUpperCase());
-    }
+        if(input[i]=='e'){
+            resultArray.push(input[i].toUpperCase());
+        }
+        if(input[i]=='u'){
+            resultArray.push(input[i].toUpperCase());
+        }
     }
     console.log(resultArray.join(''));
 }
