@@ -19,6 +19,6 @@ secretMessage.forEach(element => {
     if(element==='get' || element ==='right' || element==='the' || element==='first' || element==='time,') {
       secretMessage[secretMessage.indexOf(element)] = 'know';
     }
-  });
+});
 
-  console.log(secretMessage.join(' '))
+console.log(secretMessage.join(' '))
