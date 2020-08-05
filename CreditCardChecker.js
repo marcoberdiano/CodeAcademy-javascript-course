@@ -34,7 +34,7 @@ function validateCred(credicard){
     for ( let i = credicard.length-2; i>=0; i--){
         validcard.push(credicard[i]);
     }
-    // Multiple odd digits by 2
+    // Multiple odd digits position by 2
     for(let j = 0; j <= validcard.length-1; j++){
         if ( j % 2 == 0){
             double = validcard[j] * 2;
@@ -46,11 +46,7 @@ function validateCred(credicard){
     }
     // Add all numbers
     sum = validcard.reduce((ca,cc) => ca + cc) + checkDigit;
-    if(sum%10==0){
-        return true;
-    } else {
-        return false;
-    }
+    return sum%10==0;
 }
 
 function findInvalidCards(credicards){
@@ -116,4 +112,15 @@ function convertToArray(card){
     return creditCardArray;
 }
 
+// test all function
+
+console.log(validateCred(valid4));
+
+console.log(validateCred(invalid1));
+
+console.log(findInvalidCards(batch));
+
 console.log(idInvalidCardCompanies(batch));
+
+card = convertToArray('4929498812838759');
+console.log(validateCred(card));
