@@ -15,7 +15,7 @@ const betterWords = storyWords.filter(words => {
 });
 
 
-overusedWords.forEach(words => {
+overusedWords.forEach(words => { 
     let count = 0;
     betterWords.forEach(bWords => {
         if(words==bWords){
