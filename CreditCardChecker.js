@@ -24,6 +24,7 @@ const mystery5 = [4, 9, 1, 3, 5, 4, 0, 4, 6, 3, 0, 7, 2, 5, 2, 3];
 // An array of all the arrays above
 const batch = [valid1, valid2, valid3, valid4, valid5, invalid1, invalid2, invalid3, invalid4, invalid5, mystery1, mystery2, mystery3, mystery4, mystery5];
 
+const batch2 = [invalid1,invalid5,invalid5,invalid4];
 // Add your functions below:
 function validateCred(credicard){
     const validcard = [];
@@ -63,42 +64,31 @@ function findInvalidCards(credicards){
 
 function idInvalidCardCompanies(invalidCards){
     const companies = ['Amex (America Express)', 'Visa', 'MasterCard', 'Discover'];
-    const invalidCompanies = [];
-    invalidCards.forEach(element => {
-        switch(element[0]){
+    invalidCompanies = [];
+    for ( let i = 0; i<invalidCards.length; i++) {
+        switch (invalidCards[i][0]) {
             case 3:
-                companies.forEach(element => {
-                    if(!invalidCompanies.includes(element)){
-                        invalidCompanies.push(element);
-                    }
-                })
+                if(!invalidCompanies.includes(companies[0])){
+                    invalidCompanies.push(companies[0]);
+                }
                 break;
             case 4:
-                companies.forEach(element => {
-                    if(!invalidCompanies.includes(element)){
-                        invalidCompanies.push(element);
-                    }
-                })
+                if(!invalidCompanies.includes(companies[1])){
+                    invalidCompanies.push(companies[1]);
+                }
                 break;
             case 5:
-                companies.forEach(element => {
-                    if(!invalidCompanies.includes(element)){
-                        invalidCompanies.push(element);
-                    }
-                })
+                if(!invalidCompanies.includes(companies[2])){
+                    invalidCompanies.push(companies[2]);
+                }
                 break;
             case 6:
-                companies.forEach(element => {
-                    if(!invalidCompanies.includes(element)){
-                        invalidCompanies.push(element);
-                    }
-                })
+                if(!invalidCompanies.includes(companies[3])){
+                    invalidCompanies.push(companies[3]);
+                }
                 break;
-            default:
-                console.log('Company not found.');
-                break;
-        }; 
-    });
+        }
+    }
     return invalidCompanies;
 }
 
@@ -122,7 +112,7 @@ console.log(validateCred(invalid1));
 
 console.log(findInvalidCards(batch));
 
-console.log(idInvalidCardCompanies(batch));
+console.log(idInvalidCardCompanies(batch2));
 
 card = convertToArray('4929498812838759');
 console.log(validateCred(card));
