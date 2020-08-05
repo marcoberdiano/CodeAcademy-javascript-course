@@ -73,14 +73,27 @@
    * 
    */
 
-  // forEach()
+   /**
+    * forEach()
+    * 
+    * The .forEach() method executes a callback function on each of the elements in an array in order.
+    * 
+    */
+
   const artists = ['Picasso', 'Kahlo', 'Matisse', 'Utamaro'];
 
   artists.forEach(artist => {
     console.log(artist + ' is one of my favorite artists.');
   });
+
   
-  // map()
+  /**
+   * map()
+   * 
+   * The .map() method executes a callback function on each element in an array.
+   * It returns a new array made up of the return values from the callback function.
+   * The original array does not get altered, and the returned array may contain different elements than the original array.
+   */
   const numbers = [1, 2, 3, 4, 5];
   
   const squareNumbers = numbers.map(number => {
@@ -89,7 +102,15 @@
   
   console.log(squareNumbers);
   
-  // filter()
+  /**
+   *  filter()
+   * 
+   * The .filter() method executes a callback function on each element in an array.
+   * The callback function for each of the elements must return either true or false.
+   * The returned array is a new array with any elements for which the callback function returns true.
+   * 
+   */
+
   const things = ['desk', 'chair', 5, 'backpack', 3.14, 100];
   
   const onlyStrings = things.filter(thing => {
