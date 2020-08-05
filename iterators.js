@@ -86,6 +86,22 @@
     console.log(artist + ' is one of my favorite artists.');
   });
 
+  const fruits = ['mango', 'papaya', 'pineapple', 'apple'];
+
+// arrow function syntax
+fruits.forEach(fruit => console.log(`I want to eat a ${fruit}`));
+
+// function declaration inside forEach method
+fruits.forEach(function(fruit) {
+console.log(`I want to eat a ${fruit}`);
+});
+
+// function declaration
+function printFruit(fruit){
+console.log(`I want to eat a ${fruit}`);
+}
+fruits.forEach(printFruit)
+
   
   /**
    * map()
