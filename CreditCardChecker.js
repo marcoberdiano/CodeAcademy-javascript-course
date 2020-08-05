@@ -46,6 +46,8 @@ function validateCred(credicard){
     }
     // Add all numbers
     sum = validcard.reduce((ca,cc) => ca + cc) + checkDigit;
+
+    // check the mod 10
     return sum%10==0;
 }
 
