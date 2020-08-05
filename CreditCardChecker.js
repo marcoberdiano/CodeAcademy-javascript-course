@@ -87,6 +87,9 @@ function idInvalidCardCompanies(invalidCards){
                     invalidCompanies.push(companies[3]);
                 }
                 break;
+            default:
+                invalidCompanies.push('Company not found');
+                break;
         }
     }
     return invalidCompanies;
