@@ -38,3 +38,23 @@ countSentences(story);
 
 console.log(betterWords.join(" "));
 
+function mostUsedWord(words){
+    let muw;
+    let max = 0;
+    words.forEach(wordout => {
+        let count = 0;
+        words.forEach(wordin => {
+            if(wordout==wordin){
+                count++;
+            }
+        })
+        if (count>=max){
+            max = count;
+            muw = wordout;
+        }
+    });
+    console.log(`Most used word: '${muw}'`);
+    console.log(`Number of times: ${max}`);
+}
+
+console.log(mostUsedWord(betterWords));
