@@ -99,7 +99,7 @@ class Media {
   }
 
   
-  /*const historyOfEverything = new Book('Bill Bryson', 'A Short History of Nearly Everythins',544);
+  const historyOfEverything = new Book('Bill Bryson', 'A Short History of Nearly Everythins',544);
  
   historyOfEverything.toggleCheckOutStatus();
   console.log(historyOfEverything.isCheckedOut);
@@ -131,10 +131,10 @@ class Media {
   myMedias.addMedia(historyOfEverything);
   myMedias.addMedia(royalty);
 
-  console.log(myMedias.mediaItems);*/
+  console.log(myMedias.mediaItems);
 
   const royalty = new CD('royalty',
-  ['Back to Sleep','Fine by Me','Wrist','Make Love','Liquor','Zero','Anyway[Clean]',"Picture Me Rollin'"]);
+  ['Back to Sleep','Fine by Me','Wrist','Make Love','Liquor','Zero','Anyway[Clean]']);
   console.log(royalty.songTitles);
   console.log(royalty.shuffle());
 
