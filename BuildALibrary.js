@@ -70,6 +70,20 @@ class Media {
     get songTitles(){
       return this._songTitles;
     }
+    shuffle(){
+        let randomSongList = [];
+        let randomSongIndex;
+        while(true){
+            randomSongIndex = Math.floor(Math.random()*this._songTitles.length);
+            if(!randomSongList.includes(this._songTitles[randomSongIndex])){
+                randomSongList.push(this._songTitles[randomSongIndex]);
+            }
+            if(randomSongList.length==this._songTitles.length){
+                break;
+            }
+        }
+        return randomSongList;
+    }
   }
 
   class Catalog {
@@ -85,7 +99,7 @@ class Media {
   }
 
   
-  const historyOfEverything = new Book('Bill Bryson', 'A Short History of Nearly Everythins',544);
+  /*const historyOfEverything = new Book('Bill Bryson', 'A Short History of Nearly Everythins',544);
  
   historyOfEverything.toggleCheckOutStatus();
   console.log(historyOfEverything.isCheckedOut);
@@ -117,4 +131,10 @@ class Media {
   myMedias.addMedia(historyOfEverything);
   myMedias.addMedia(royalty);
 
-  console.log(myMedias.mediaItems);
+  console.log(myMedias.mediaItems);*/
+
+  const royalty = new CD('royalty', ['Back to Sleep','Fine by Me','Wrist']);
+  console.log(royalty.songTitles);
+  console.log(royalty.shuffle());
+
+
