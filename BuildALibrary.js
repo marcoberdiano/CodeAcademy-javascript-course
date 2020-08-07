@@ -133,8 +133,7 @@ class Media {
 
   console.log(myMedias.mediaItems);
 
-  const royalty = new CD('royalty',
-  ['Back to Sleep','Fine by Me','Wrist','Make Love','Liquor','Zero','Anyway[Clean]']);
+  const royalty = new CD('royalty', ['Back to Sleep','Fine by Me','Wrist','Make Love','Liquor','Zero','Anyway[Clean]']);
   console.log(royalty.songTitles);
   console.log(royalty.shuffle());
 
