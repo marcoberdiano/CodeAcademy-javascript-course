@@ -109,7 +109,7 @@ class Media {
   console.log(historyOfEverything.getAverageRating());
   
   
-  const speed = new Movie('Jan de Bont','Speed',116);
+  /*const speed = new Movie('Jan de Bont','Speed',116);
   speed.toggleCheckOutStatus();
   console.log(speed.isCheckedOut);
   speed.addRating(1);
@@ -131,7 +131,7 @@ class Media {
   myMedias.addMedia(historyOfEverything);
   myMedias.addMedia(royalty);
 
-  console.log(myMedias.mediaItems);
+  console.log(myMedias.mediaItems);*/
 
   const royalty = new CD('royalty', ['Back to Sleep','Fine by Me','Wrist','Make Love','Liquor','Zero','Anyway[Clean]']);
   console.log(royalty.songTitles);
